@@ -1,7 +1,7 @@
 package caloriescalculator.osgi;
 
 import java.io.File;
-import java.lang.reflect.Method;
+//import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -43,11 +43,10 @@ public class Launcher {
             List<Bundle> bundleList = new LinkedList<Bundle>();
 
             File folder = new File(".");
-            // System.out.println(folder.getAbsolutePath());
             for (File file : folder.listFiles()) {
                 // System.out.println(file.getName());
                 if (file.getName().endsWith(".jar")&&!file.getName().contains("org.eclipse.osgi_")) {
-                    System.out.println("\t".concat(file.getName()));
+                   // System.out.println("\t".concat(file.getName()));
                     Bundle bundle = bndlCtxt.installBundle(file.toURI()
                                     .toString());
                     bundleList.add(bundle);

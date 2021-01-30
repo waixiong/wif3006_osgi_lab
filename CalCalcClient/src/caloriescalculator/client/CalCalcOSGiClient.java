@@ -29,15 +29,16 @@ import org.osgi.service.component.ComponentContext;
 public class CalCalcOSGiClient {
     
     ComponentContext context;
-    ServiceReference reference;
+    // ServiceReference cartRef;
+    // ServiceReference calcalcRef;
     ICart cart;
     ICalCalc calcalc;
     static JFrame f;
     
     public void activate(ComponentContext context) {
-        if (reference != null) {
-            cart = (ICart) context.locateService("ICart", reference);
-            calcalc = (ICalCalc) context.locateService("ICalCalc", reference);
+        if (cart != null && calcalc != null) {
+            // cart = (ICart) context.locateService("ICart", reference);
+            // calcalc = (ICalCalc) context.locateService("ICalCalc", reference);
             System.out.println("[Activate Done]");
             JFrame frame = new AppFrame(calcalc, cart);
             navigate(frame);
@@ -53,18 +54,20 @@ public class CalCalcOSGiClient {
         System.out.println(reference.toString());
         System.out.println("");
         
-//        if (reference.toString().contains("CourseDAO")) {
-//            System.out.println("Bind Course Reference");
-//            courseRef = reference;
-//        } else {
-//            System.out.println("Bind Timetable Reference");
-//            timetableRef = reference;
-//        }
+        if (reference.toString().contains("Cart")) {
+            System.out.println("Bind Cart Reference");
+            // cartRef = reference;
+            cart = (ICart) context.locateService("ICart", reference);
+        } else {
+            System.out.println("Bind CalCalc Reference");
+            // calcalcRef = reference;
+            calcalc = (ICalCalc) context.locateService("ICalCalc", reference);
+        }
     }
 
     public void lostService(ServiceReference reference) {
         System.out.println("unbind Service");
-        this.reference = null;
+        // this.reference = null;
     }
     
     public static void navigate(JFrame frame) {
