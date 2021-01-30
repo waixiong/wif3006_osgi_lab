@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="caloriescalculator.impl.cart">
+   <implementation class="caloriescalculator.impl.cart.Cart"/>
+   <service>
+      <provide interface="caloriescalculator.ifce.cart.ICart"/>
+   </service>
+</scr:component>

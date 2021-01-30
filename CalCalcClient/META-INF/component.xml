@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="caloriescalculator.client">
+   <implementation class="caloriescalculator.client.CalCalcOSGiClient"/>
+   <reference bind="gotService" cardinality="1..1" interface="caloriescalculator.ifce.calcalc.ICalCalc" name="ICalCalc" policy="dynamic" unbind="lostService"/>
+   <reference bind="gotService" cardinality="1..1" interface="caloriescalculator.ifce.cart.ICart" name="ICart" policy="dynamic" unbind="lostService"/>
+</scr:component>

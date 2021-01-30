@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CalCalcImpl
+Bundle-SymbolicName: caloriescalculator.impl.calcalc.CalCalcImpl
+Bundle-Version: 1.0.0.qualifier
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: caloriescalculator.ifce.calcalc,
+ org.osgi.framework;version="1.3.0"
+Service-Component: META-INF/component.xml
