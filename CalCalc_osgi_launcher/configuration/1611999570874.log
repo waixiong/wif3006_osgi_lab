@@ -1,0 +1,23 @@
+!SESSION 2021-01-30 17:39:31.486 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_241
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+
+!ENTRY caloriescalculator.client 4 0 2021-01-30 17:39:31.487
+!MESSAGE [SCR] Component definition XMLs not found in bundle caloriescalculator.client. The component header value is META-INF/component.xml
+
+!ENTRY caloriescalculator.client 4 0 2021-01-30 17:39:31.488
+!MESSAGE [SCR] Component definition XMLs not found in bundle caloriescalculator.client. The component header value is META-INF/component.xml
+
+!ENTRY caloriescalculator.impl.cart 4 0 2021-01-30 17:39:31.488
+!MESSAGE [SCR] Component definition XMLs not found in bundle caloriescalculator.impl.cart. The component header value is META-INF/component.xml
+
+!ENTRY caloriescalculator.impl.cart 4 0 2021-01-30 17:39:31.489
+!MESSAGE [SCR] Component definition XMLs not found in bundle caloriescalculator.impl.cart. The component header value is META-INF/component.xml
+
+!ENTRY caloriescalculator.impl.calcalc 4 0 2021-01-30 17:39:31.489
+!MESSAGE [SCR] Component definition XMLs not found in bundle caloriescalculator.impl.calcalc. The component header value is META-INF/component.xml
+
+!ENTRY caloriescalculator.impl.calcalc 4 0 2021-01-30 17:39:31.489
+!MESSAGE [SCR] Component definition XMLs not found in bundle caloriescalculator.impl.calcalc. The component header value is META-INF/component.xml
